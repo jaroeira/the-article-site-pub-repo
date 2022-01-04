@@ -1,0 +1,30 @@
+@import '../../sass/variables';
+
+.sectionCardList {
+    padding: 4rem 1rem;
+
+    @media screen and (min-width: $bp-medium){
+        padding: 8rem 1rem;
+    }
+
+    @media screen and (min-width: $bp-large){
+        padding: 8rem 0;
+    }
+
+    &__title {
+        letter-spacing: 2px;
+    }
+
+    &__list {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: $grid-default-gap;
+    }
+
+    &__no-data {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+

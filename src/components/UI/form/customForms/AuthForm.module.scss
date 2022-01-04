@@ -1,0 +1,25 @@
+@import '../../../../sass/variables';
+
+.authForm {
+    &__title {
+        text-align: center;
+        font-size: 3.5rem;
+        color: $color-primary-dark;
+        margin-bottom: 2rem;
+    }
+
+    &__formContainer {
+        padding: 0;
+
+        @media screen and (min-width: $bp-medium) {
+            padding: 0 4rem;
+        }
+    }
+
+    &__forgotPasswordBox {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+}

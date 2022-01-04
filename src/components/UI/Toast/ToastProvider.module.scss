@@ -1,0 +1,19 @@
+
+.toastProvider {
+
+    &__container {
+        box-sizing: border-box;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 1rem;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+
+        &--top-position {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+// Responsive Breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em;
+$bp-medium: 50em; //800px 800 / 16px => 50em
+$bp-small: 39.375em; //630px
+
+//Color Variables
+$color-primary: #03A9F4;
+$color-primary-light: #B3E5FC;
+$color-primary-dark: #0288D1;
+
+$color-white: #FFFFFF;
+$color-grey: #BDBDBD;
+
+$color-primary-text: #212121;
+$color-secondary-text: #757575;
+
+$color-accent: #9E9E9E;
+
+$color-grey-light-1: #f2f2f2;
+$color-grey-light-2:#d9d9d9;
+
+$color-grey-dark-1: #a6a6a6;
+$color-grey-dark-2: #8c8c8c;
+$color-grey-dark-3: #737373;
+$color-grey-dark-4: #464646;
+
+$color-red: red;
+$color-green: #33A857;
+$color-purple: #ad7cef;
+
+//Font
+$font-primary: 'Roboto', sans-serif;
+$default-font-size: 1.6rem;
+
+//Shadows
+$shadow-light: 0 2rem 5rem rgba(0,0,0, .06);
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+//Grid
+$grid-default-gap: 5rem;

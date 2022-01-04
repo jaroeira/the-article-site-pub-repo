@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+
+.loading {
+    padding: 15rem 0;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+    @media screen and (min-width: $bp-medium) {
+        padding: 20rem 0;
+    }
+
+    &__text {
+        color: $color-secondary-text;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    &__spinner {
+        width: 8rem;
+        height: 8rem;
+    }
+}

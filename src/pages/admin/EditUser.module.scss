@@ -1,0 +1,14 @@
+@import '../../sass/variables';
+
+.editUser {
+    padding: 10rem 0;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    &__title {
+        font-weight: 400;
+        color: $color-primary-dark;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

@@ -1,0 +1,61 @@
+$gutter: 1rem;
+$toastWidth: 35rem;
+
+.wrapper {
+    margin-bottom: $gutter;
+}
+
+.toast {
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+    width: $toastWidth;
+    box-shadow: 0 3px 4px rgba(0,0,0,.2);
+
+    &__icon-container {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        margin-right: .5rem;
+    }
+
+    &__content {
+        line-height: 1.4;
+        font-size: 1.4rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 0 .5rem;
+    }
+
+    &__button-container {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        width: 2rem;
+        height: 2rem;
+        opacity: .5;
+        cursor: pointer;
+        transition: opacity .15s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

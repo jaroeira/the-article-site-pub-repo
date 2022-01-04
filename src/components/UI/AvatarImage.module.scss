@@ -1,0 +1,109 @@
+@import '../../sass/variables';
+
+.avatarImage {
+
+    overflow: hidden;
+    display: inline-block;
+
+    &--small {
+        width: 4rem;
+    }
+
+    &--medium {
+        width: 6rem;
+    }
+
+    &--large {
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+    &__container {
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: $color-grey-light-1;
+        margin: 0 auto;
+        border: 1px solid darken( $color-grey-light-1, 20);;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--small {
+            width: 4rem;
+            height: 4rem;
+        }
+    
+        &--medium {
+            width: 6rem;
+            height: 6rem;
+        }
+    
+        &--large {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    &__icon {
+       
+        fill: darken( $color-grey-light-1, 20);
+
+        &--small {
+            width: 3rem;
+            height: 3rem;
+            transform: translateY(.4rem);
+        }
+
+        &--medium {
+            width: 5rem;
+            height: 5rem;
+            transform: translateY(.7rem);
+        }
+
+        &--large {
+            width: 8rem;
+            height: 8rem;
+            transform: translateY(.9rem);
+        }
+    }
+
+    &__photo {
+        &--small {
+            width: 4rem;
+            height: 4rem;
+     
+        }
+
+        &--medium {
+            width: 6rem;
+            height: 6rem;
+      
+        }
+
+        &--large {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    &__user-name {
+        color: $color-primary;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1rem;
+
+        &--small {
+            font-size: 1rem;
+            margin-top: .4rem;
+        }
+
+        &--medium {
+            font-size: 1.2rem;
+        }
+
+        &--large {
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '../../sass/variables';
+
+.paginator {
+    display: flex;
+    justify-content: center;
+
+    &__pages {
+        margin: 0 2rem;
+        display: flex;
+    }
+
+    &__page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        color: $color-primary;
+        background-color: $color-white;
+        cursor: pointer;
+
+        &--selected {
+            color: $color-white;
+            background-color: $color-primary;
+            border-radius: 2px;
+        }
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        fill: $color-primary;
+
+        &--disabled {
+            fill: $color-grey;
+        }
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border: none;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        width: 4rem;
+        height: 4rem;
+    }
+}

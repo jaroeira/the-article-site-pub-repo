@@ -1,0 +1,60 @@
+@import '../../sass/variables';
+
+.searchBox {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+    &__input {
+        flex: 0 0 80%;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        border: none;
+        padding: .7rem 1rem;
+        border-radius: 5px;
+        box-shadow: $shadow-dark;
+        background-color: $color-grey-light-1;
+
+        margin: -2.8rem;
+
+        &:focus {
+            outline: none;
+            background-color: $color-grey-light-2;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__input:focus + &__button {
+        background-color: $color-grey-light-2;
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-grey-light-1;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-grey-dark-2;
+        cursor: pointer;
+    }
+
+    &__error {
+        transform: translateY(-3rem);
+        color: $color-accent;
+    }
+
+}

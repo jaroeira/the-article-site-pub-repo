@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+
+.verifyEmail {
+    padding: 15rem 0;
+
+    @media screen and (min-width: $bp-medium) {
+        padding: 20rem 0;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: max-content;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 3.5rem;
+        color: $color-primary-text;
+    }
+
+    &__text {
+        color: $color-secondary-text
+    }
+
+    &__icon-container {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 3px solid $color-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 10rem;
+        height: 10rem;
+        fill: $color-green;
+    }
+}

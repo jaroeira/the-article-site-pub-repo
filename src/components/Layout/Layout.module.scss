@@ -1,0 +1,26 @@
+@import '../../sass//variables';
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] 
+                         repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] 1fr [full-end];
+    grid-template-rows: 40rem repeat(2, min-content);
+
+    @media only screen and (min-width: $bp-medium) {
+        grid-template-rows: 80vh repeat(2, min-content);
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
+                         repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem , 1fr) [full-end];
+    }
+
+    &--no-header {
+        grid-template-rows: repeat(2, min-content);
+    }
+}
+
+.main {
+    grid-row: 2 / 3;
+    grid-column: center-start / center-end;
+}

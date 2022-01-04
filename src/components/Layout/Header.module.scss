@@ -1,0 +1,19 @@
+@import '../../sass/variables';
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+
+    background-color: $color-grey-light-2;
+    padding: 2rem;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 5rem;
+
+    @media screen and (min-widrh: $bp-medium) {
+        padding: 0;
+    }
+}

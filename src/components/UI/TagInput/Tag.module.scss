@@ -1,0 +1,59 @@
+@import '../../../sass/variables';
+
+.tag {
+    background-color: $color-grey-dark-3;
+    color: $color-white;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: .1rem 0 .1rem .8rem;
+    height: 2.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+
+    &__content {
+        text-transform: uppercase;
+        padding-right: .8rem;
+    }
+
+    &__remove {
+        position: relative;
+        margin-left: .5rem;
+        width: 0;
+        height: 100%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: darken($color-grey-dark-3, 10%);
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        visibility: hidden;
+        opacity: 0;
+
+        &:before, &:after {
+            content: "";
+            width: 1rem;
+            height: 1.2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: $color-white;
+        }
+
+        &:before {
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+
+        &:after {
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+        }
+
+    }
+
+    &:hover > &__content + &__remove {
+        width: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+}

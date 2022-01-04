@@ -1,0 +1,94 @@
+@import '../../../sass/variables';
+
+.formInput {
+
+    padding-top: 1.6rem;
+
+    &__input {
+   
+        display: block;
+        width: 100%;
+        box-sizing: inherit;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        border-width: 0 0 1px;
+        padding: 0;
+        border-bottom: 1px solid $color-grey-dark-4;
+        transition: 0.2s ease all;
+
+        &:focus:not(:read-only) {
+            outline: none;
+            outline-offset: 0;
+            border-bottom: 1.5px solid $color-primary-dark;
+        }
+
+        &:focus:read-only {
+            outline: none;
+        }
+
+        &:read-only {
+            border-bottom: none;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+            color: $color-grey-dark-2;
+        }
+
+    }
+
+    &__label {
+        display: block;
+        font-weight: 300;
+        font-size: 1.2rem;
+        cursor: text;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        transition: 0.2s ease all;
+        transform: translateY(-4rem);
+    }
+
+    &__input:placeholder-shown ~ &__label {
+       visibility: hidden;
+       opacity: 0;
+       transform: translateY(-2rem);
+    }
+
+    &__textarea {
+        outline: none;
+        resize: none;
+    }
+
+    &__select {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-grey-light-1;
+        border-radius: 4px;
+        padding: 0 .5rem;
+
+        select {
+            padding: .5em 1rem;
+            border: none;
+	        background-color: transparent;
+            width: 100%;
+
+            &:active, &:focus {
+                outline: none;
+	            box-shadow: none;
+            }
+        }
+    }
+
+    &__error {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        transform: translateY(-1.4rem);
+        color: $color-red;
+    }
+
+}

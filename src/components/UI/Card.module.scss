@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+.card {
+    min-width:  30rem;
+    border-radius: 5px;
+    padding: 2rem 2.5rem;
+    box-shadow: $shadow-dark;
+    background-color: $color-white;
+    overflow: hidden; 
+    
+    @media screen and (min-width: $bp-medium) {
+        min-width: none;
+        max-width: 50rem;
+    }
+}

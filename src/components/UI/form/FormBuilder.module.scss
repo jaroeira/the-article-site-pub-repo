@@ -1,0 +1,56 @@
+@import '../../../sass/variables';
+
+.formBuilder {
+    
+
+    &__inputContainer {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-medium) {
+            display: grid;
+            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__buttons-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+        @media screen and (min-width: $bp-medium) {
+           justify-content: space-between;
+           align-items: center;
+           flex-direction: row;
+        }
+    }
+
+    &__button {
+        display: block;
+        border: none;
+        // margin: 0 auto;
+
+        &:disabled {
+            background-color: $color-accent;
+        }
+    }
+
+    &__linkButton {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+
+        &:link,
+        &:visited {
+            color: $color-secondary-text;
+        }
+
+        &:hover {
+            color: $color-primary-dark;
+            border-bottom: 1px solid $color-primary-dark;
+        }
+    }
+}

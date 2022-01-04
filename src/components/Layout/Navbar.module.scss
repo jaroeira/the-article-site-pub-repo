@@ -1,0 +1,121 @@
+@import '../../sass/variables';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    transition: all .3s;
+    background-color: transparent;
+
+    &__container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: absolute;
+        padding: 1rem;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        z-index: 1000;
+
+        background: $color-white;
+        transform: translateY(-20rem);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-out;
+
+        &--is-open {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        @media screen and (min-width: $bp-medium ) {
+            position: relative;
+            flex-direction: row;
+            top: 0;
+            align-items: center;
+            
+
+            background: transparent;
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 1;
+
+            & > *:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__user-image {
+        height: 3.5rem;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+        color: $color-grey-dark-1;
+    }
+
+    &__user-link {
+        text-decoration: none;
+
+        @media screen and (min-width: $bp-medium ) {
+            margin-right: auto;
+        }
+    }
+
+    &--white {
+        background-color: $color-white;
+    }
+
+    &__signout-button {
+        border: none;
+        background: transparent;
+        color: $color-grey-dark-4; 
+    }
+
+}
+
+
+.logo {
+
+    &__link {
+        margin-right: auto;
+        text-decoration: none;
+        color: $color-primary-text;
+    }
+
+    &__text {
+        font-size: 2rem;
+    }
+    
+}
+
+.active {
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    &:hover {
+        background-color: darken($color-primary-dark, 5);
+    }
+}
+
+

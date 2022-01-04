@@ -1,0 +1,38 @@
+@import '../../sass/variables';
+
+.paginatedArticles {
+    &__no-articles {
+        margin: 10rem auto;
+        max-width: 40rem;
+        max-height: 40rem;
+        box-shadow: $shadow-light;
+        border-radius: 3px;
+        padding: 8rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > :not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &-title {
+            text-align: center;
+            color: $color-primary-text;
+            font-weight: 400;
+        }
+
+        &-text {
+            color: $color-secondary-text;
+            font-size: 1.2rem;
+        }
+
+        &-icon {
+            width: 8rem;
+            height: 8rem;
+            fill: $color-primary-dark;
+        }
+    }
+}

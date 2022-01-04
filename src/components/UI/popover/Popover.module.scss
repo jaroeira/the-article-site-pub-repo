@@ -1,0 +1,29 @@
+@import '../../../sass/variables';
+
+.popover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: $color-primary-dark;
+    }
+
+    &__text {
+        color: $color-secondary-text;
+        padding: 1.5rem 0;
+    }
+
+    &__btn {
+        border: none;
+        width: 50%;
+    }
+}

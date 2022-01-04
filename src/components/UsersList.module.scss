@@ -1,0 +1,77 @@
+@import '../sass/variables';
+
+.usersList {
+
+    margin-bottom: 2rem;
+
+    &__table {
+        border-collapse: collapse;
+        box-shadow: 0 5px 10px $color-grey-light-1;
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+
+        thead {
+            box-shadow: 0 5px 10px $color-grey-light-1;
+        }
+
+        th {
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: $color-secondary-text;
+        }
+
+        td {
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: $color-grey-light-2;
+        }
+    }
+
+    &__role {
+        border-radius:  3px;
+        text-align: center;
+
+        &--admin {
+            background-color: #def2d5;
+            color: #577153;
+        }
+
+        &--editor {
+            background-color: #cce8f5;
+            color: #4b81a6
+        }
+
+        &--user {
+            background-color: #f8f3d7;
+            color: #90703b;
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        cursor: pointer;
+
+        &--delete {
+            fill: $color-primary-text;
+        }
+
+        &--edit {
+            fill: $color-accent;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+    }
+
+}
